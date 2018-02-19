@@ -1,8 +1,26 @@
-with open("input.txt", "r") as f:
-    input_data = f.read()
+from nltk.tokenize import sent_tokenize, word_tokenize
+import pyphen
 
-print(input_data)
+def main():
+	with open("input.txt", "r") as f:
+	    input_data = f.read()
 
+	cword = calculate_words(input_data)
+
+	print ("Word count: " + str(cword))
+	[wordmap, csyllable] = calculate_syllables(input_data)
+
+	# print ("Words->syllable count: ", wordmap)
+
+	print ("Syllable count: " + str(csyllable))
+
+	csentence = calculate_sentences(input_data)
+
+	print("Sentence count: " + str(csentence))
+
+	score = calculate_formula(cword, csentence, csyllable)
+
+	print ("Score: " + str(score))
 
 def calculate_formula(words, sentences, syllables):
     """Calculates the Flesch-Kincaid Reading Ease Formula"""
@@ -11,12 +29,33 @@ def calculate_formula(words, sentences, syllables):
 
 def calculate_words(text):
     """Return the number of words in the inputted text."""
-    return 0
+    count = 0
+    worker = pyphen.Pyphen(lang='nl_NL')
+
+    for word in word_tokenize(text):
+       if word.isalpha():
+            count += 1
+
+    return count
 
 def calculate_sentences(text):
     """Return the number of sentences in the inputted text."""
-    return 0
+    return len(sent_tokenize(text))
 
 def calculate_syllables(text):
-    """Return the number of syllables in the inputted text."""
-    return 0
+    """Return the number of syllables in the inputted text.""" 
+    # Set up return struct and syllable function
+    count = 0
+    wordmap = {}
+    worker = pyphen.Pyphen(lang='nl_NL')
+    
+    # count syllables 
+    for word in word_tokenize(text):
+       if word.isalpha():
+        word = worker.inserted(word)
+        wordmap[word] = word.count('-')
+        count += word.count('-')
+
+    return wordmap, count
+
+main()
