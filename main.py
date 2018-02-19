@@ -2,25 +2,25 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 import pyphen
 
 def main():
-	with open("input.txt", "r") as f:
-	    input_data = f.read()
+    with open("input.txt", "r") as f:
+        input_data = f.read()
 
-	cword = calculate_words(input_data)
+    cword = calculate_words(input_data)
 
-	print ("Word count: " + str(cword))
-	[wordmap, csyllable] = calculate_syllables(input_data)
+    print ("Word count: " + str(cword))
+    [wordmap, csyllable] = calculate_syllables(input_data)
 
-	# print ("Words->syllable count: ", wordmap)
+    # print ("Words->syllable count: ", wordmap)
 
-	print ("Syllable count: " + str(csyllable))
+    print ("Syllable count: " + str(csyllable))
 
-	csentence = calculate_sentences(input_data)
+    csentence = calculate_sentences(input_data)
 
-	print("Sentence count: " + str(csentence))
+    print("Sentence count: " + str(csentence))
 
-	score = calculate_formula(cword, csentence, csyllable)
+    score = calculate_formula(cword, csentence, csyllable)
 
-	print ("Score: " + str(score))
+    print ("Score: " + str(score))
 
 def calculate_formula(words, sentences, syllables):
     """Calculates the Flesch-Kincaid Reading Ease Formula"""
