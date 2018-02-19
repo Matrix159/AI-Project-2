@@ -54,7 +54,10 @@ def calculate_syllables(text):
        if word.isalpha():
         word = worker.inserted(word)
         wordmap[word] = word.count('-')
-        count += word.count('-')
+        if word.count('-') == 0:
+            count += 1
+        else:
+            count += word.count('-')
 
     return wordmap, count
 
