@@ -3,8 +3,12 @@ import pyphen
 
 
 def main():
+    
     calculate_category("Online news", "./online-news/", "online-news-info.txt")
     calculate_category("Trump tweets", "./tweets/", "trumpt-tweets.txt")
+    
+    """calculate_category("chris_test", "./chris_test/", "chris_test.txt")"""
+    
 
 def calculate_category(category_name, input_folder, output_file):
     """
@@ -80,17 +84,18 @@ def calculate_syllables(text):
     # Set up return struct and syllable function
     count = 0
     wordmap = {}
-    worker = pyphen.Pyphen(lang='nl_NL')
+    worker = pyphen.Pyphen(lang='en')
     
     # count syllables 
     for word in word_tokenize(text):
        if word.isalpha():
         word = worker.inserted(word)
+        
         wordmap[word] = word.count('-')
         if word.count('-') == 0:
             count += 1
         else:
-            count += word.count('-')
+            count += word.count('-')+1
 
     return wordmap, count
 
