@@ -1,0 +1,71 @@
+Trump tweets 1
+Word count: 41
+Syllable count: 48
+Sentence count: 3
+Score: 93.91943089430896
+
+
+Trump tweets 2
+Word count: 28
+Syllable count: 35
+Sentence count: 2
+Score: 86.875
+
+
+Trump tweets 3
+Word count: 40
+Syllable count: 49
+Sentence count: 5
+Score: 95.08
+
+
+Trump tweets 4
+Word count: 55
+Syllable count: 61
+Sentence count: 3
+Score: 94.39757575757578
+
+
+Trump tweets 5
+Word count: 17
+Syllable count: 17
+Sentence count: 2
+Score: 113.60750000000002
+
+
+Trump tweets 6
+Word count: 45
+Syllable count: 58
+Sentence count: 3
+Score: 82.57000000000001
+
+
+Trump tweets 7
+Word count: 30
+Syllable count: 34
+Sentence count: 3
+Score: 100.805
+
+
+Trump tweets 8
+Word count: 42
+Syllable count: 52
+Sentence count: 3
+Score: 87.88214285714287
+
+
+Trump tweets 9
+Word count: 46
+Syllable count: 59
+Sentence count: 2
+Score: 74.98130434782611
+
+
+Trump tweets 10
+Word count: 52
+Syllable count: 57
+Sentence count: 1
+Score: 61.320384615384626
+
+
+Score average: 89.14383384722385

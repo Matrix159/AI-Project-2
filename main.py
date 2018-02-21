@@ -1,10 +1,20 @@
 from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import words as words
+from nltk.corpus import wordnet as wn
 import pyphen
+import re
+
+    
 
 
 def main():
-    calculate_category("Online news", "./online-news/", "online-news-info.txt")
-    calculate_category("Trump tweets", "./tweets/", "trumpt-tweets.txt")
+    
+    
+    #make_dictionary()
+    increase_difficulty("Trump tweets", "./tweets/", "trumpt-tweets.txt")
+    
+    ##calculate_category("Online news", "./online-news/", "online-news-info.txt")
+    ##calculate_category("Trump tweets", "./tweets/", "trumpt-tweets.txt")
 
 def calculate_category(category_name, input_folder, output_file):
     """
@@ -54,9 +64,11 @@ def calculate_words(text):
     :return: Number of words
     """
     count = 0
+        
     #worker = pyphen.Pyphen(lang='nl_NL')
-    for word in word_tokenize(text):
+    for word in re.findall(r"\w+(?:[-']\w+)*|'|[-.(]+|\S\w*", text):
         if word.isalpha():
+            print(word)
             count += 1
 
     return count
@@ -93,6 +105,72 @@ def calculate_syllables(text):
             count += word.count('-')
 
     return wordmap, count
+
+def make_dictionary():
+    global dictionary
+    dictionary = dict.fromkeys(words.words(), None)
+    print(len(dictionary))
+    return
+
+def increase_difficulty(category_name, input_folder, output_file):
+    
+    #open(output_file, 'w').close()
+   
+    #with open(input_folder + "input.txt".format(str(x)), "r", encoding="utf8") as f:
+        #input_data = f.read()
+    #return
+
+    worker = pyphen.Pyphen(lang='nl_NL')
+    old_word = "good"
+    old_word_hyph = worker.inserted(old_word)
+    old_word_count = 0
+    new_word_count = 0
+    
+    if old_word.count('-') == 0:
+        old_word_count += 1
+    else:
+        old_word_count += old_word.count('-')
+
+    #if word in dictionary:
+    for syn in wn.synsets(old_word):
+        for l in syn.lemmas():
+            new_word = l.name()
+  
+        # count syllables      
+        new_word_hyph = worker.inserted(new_word)
+        if new_word.count('-') == 0:
+            new_word_count += 1
+        else:
+            new_word_count += new_word.count('-')
+        if new_word_count > old_word_count:
+            print(new_word)
+            break
+
+  
+       
+        
+    #with open(output_file, 'a') as out:
+    #    out.write(category_name + " {}".format(str(x)) + '\n')
+    #    cword = calculate_words(input_data)
+    #    out.write("Word count: " + str(cword) + "\n")
+    #    [wordmap, csyllable] = calculate_syllables(input_data)
+    #    out.write("Syllable count: " + str(csyllable) + "\n")
+    #    csentence = calculate_sentences(input_data)
+    #    out.write("Sentence count: " + str(csentence) + "\n")
+    #    score = calculate_formula(cword, csentence, csyllable)
+    #    average_sum += score
+    #    out.write("Score: " + str(score) + "\n\n\n")
+    #    if x == 10:
+    #        out.write("Score average: " + str(average_sum/10))
+
+
+
+
+
+
+    
+
+
 
 
 main()
