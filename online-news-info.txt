@@ -1,0 +1,70 @@
+Online news 1
+Word count: 459
+Syllable count: 640
+Sentence count: 20
+Score: 65.57996568627452
+
+
+Online news 2
+Word count: 223
+Syllable count: 257
+Sentence count: 9
+Score: 84.18690084703539
+
+
+Online news 3
+Word count: 459
+Syllable count: 593
+Sentence count: 12
+Score: 58.71321078431376
+
+
+Online news 4
+Word count: 746
+Syllable count: 917
+Sentence count: 24
+Score: 71.29319146559428
+
+
+Online news 5
+Word count: 354
+Syllable count: 438
+Sentence count: 12
+Score: 72.21792372881357
+
+
+Online news 6
+Word count: 150
+Syllable count: 225
+Sentence count: 8
+Score: 60.90375000000002
+
+
+Online news 7
+Word count: 307
+Syllable count: 369
+Sentence count: 18
+Score: 87.83826909156713
+
+
+Online news 8
+Word count: 93
+Syllable count: 126
+Sentence count: 5
+Score: 73.33664516129035
+
+
+Online news 9
+Word count: 567
+Syllable count: 727
+Sentence count: 28
+Score: 77.80823412698413
+
+
+Online news 10
+Word count: 506
+Syllable count: 635
+Sentence count: 20
+Score: 74.9875158102767
+
+
