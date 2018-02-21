@@ -10,7 +10,8 @@ def calculate_category(category_name, input_folder, output_file):
     """
     Prints reading ease information for each text source in a category
     to a text file.
-    :param input_folder: The folder name to read files from,
+    :param category_name: The name of the category
+    :param input_folder: The folder name to read files from
     :param output_file: The output file for the category
     :return: None
     """
