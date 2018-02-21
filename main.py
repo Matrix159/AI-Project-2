@@ -28,7 +28,7 @@ def calculate_category(category_name, input_folder, output_file):
             out.write(category_name + " {}".format(str(x)) + '\n')
             cword = calculate_words(input_data)
             out.write("Word count: " + str(cword) + "\n")
-            [wordmap, csyllable] = calculate_syllables(input_data)
+            wordmap, csyllable = calculate_syllables(input_data)
             out.write("Syllable count: " + str(csyllable) + "\n")
             csentence = calculate_sentences(input_data)
             out.write("Sentence count: " + str(csentence) + "\n")
@@ -58,7 +58,6 @@ def calculate_words(text):
     :return: Number of words
     """
     count = 0
-    #worker = pyphen.Pyphen(lang='nl_NL')
     for word in word_tokenize(text):
         if word.isalpha():
             count += 1
