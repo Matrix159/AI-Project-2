@@ -1,71 +1,71 @@
 Online news 1
 Word count: 459
-Syllable count: 640
+Syllable count: 575
 Sentence count: 20
-Score: 65.57996568627452
+Score: 77.56035784313725
 
 
 Online news 2
 Word count: 223
-Syllable count: 257
+Syllable count: 239
 Sentence count: 9
-Score: 84.18690084703539
+Score: 91.0156003986049
 
 
 Online news 3
 Word count: 459
-Syllable count: 593
+Syllable count: 526
 Sentence count: 12
-Score: 58.71321078431376
+Score: 71.06223039215688
 
 
 Online news 4
 Word count: 746
-Syllable count: 917
+Syllable count: 833
 Sentence count: 24
-Score: 71.29319146559428
+Score: 80.81919682752458
 
 
 Online news 5
 Word count: 354
-Syllable count: 438
+Syllable count: 411
 Sentence count: 12
-Score: 72.21792372881357
+Score: 78.67046610169493
 
 
 Online news 6
 Word count: 150
-Syllable count: 225
+Syllable count: 189
 Sentence count: 8
-Score: 60.90375000000002
+Score: 81.20775000000002
 
 
 Online news 7
 Word count: 307
-Syllable count: 369
+Syllable count: 335
 Sentence count: 18
-Score: 87.83826909156713
+Score: 97.20765019905899
 
 
 Online news 8
 Word count: 93
-Syllable count: 126
+Syllable count: 115
 Sentence count: 5
-Score: 73.33664516129035
+Score: 83.34309677419357
 
 
 Online news 9
 Word count: 567
-Syllable count: 727
+Syllable count: 656
 Sentence count: 28
-Score: 77.80823412698413
+Score: 88.40188492063493
 
 
 Online news 10
 Word count: 506
-Syllable count: 635
+Syllable count: 597
 Sentence count: 20
-Score: 74.9875158102767
+Score: 81.34087549407117
 
 
-Score average: 72.68656067021499
+Score average: 83.06291089510772
