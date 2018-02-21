@@ -3,10 +3,10 @@ import pyphen
 
 
 def main():
-    calculate_category("./online-news/" , "online-news-info.txt")
+    calculate_category("Online news", "./online-news/", "online-news-info.txt")
 
 
-def calculate_category(input_folder, output_file):
+def calculate_category(category_name, input_folder, output_file):
     """
     Prints reading ease information for each text source in a category
     to a text file.
@@ -19,7 +19,7 @@ def calculate_category(input_folder, output_file):
         with open(input_folder + "input{}.txt".format(str(x)), "r", encoding="utf8") as f:
             input_data = f.read()
         with open(output_file, 'a') as out:
-            out.write("Online news {}".format(str(x)) + '\n')
+            out.write(category_name + " {}".format(str(x)) + '\n')
             cword = calculate_words(input_data)
             out.write("Word count: " + str(cword) + "\n")
             [wordmap, csyllable] = calculate_syllables(input_data)
