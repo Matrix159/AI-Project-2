@@ -4,7 +4,7 @@ import pyphen
 
 def main():
     calculate_category("Online news", "./online-news/", "online-news-info.txt")
-
+    calculate_category("Trump tweets", "./tweets/", "trumpt-tweets.txt")
 
 def calculate_category(category_name, input_folder, output_file):
     """
