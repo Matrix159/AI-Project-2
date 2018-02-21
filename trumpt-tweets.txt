@@ -68,3 +68,4 @@ Sentence count: 1
 Score: 61.320384615384626
 
 
+Score average: 89.14383384722385

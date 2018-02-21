@@ -16,6 +16,7 @@ def calculate_category(category_name, input_folder, output_file):
     :return: None
     """
     open(output_file, 'w').close()
+    average_sum = 0
     for x in range(1, 11):
         with open(input_folder + "input{}.txt".format(str(x)), "r", encoding="utf8") as f:
             input_data = f.read()
@@ -28,7 +29,11 @@ def calculate_category(category_name, input_folder, output_file):
             csentence = calculate_sentences(input_data)
             out.write("Sentence count: " + str(csentence) + "\n")
             score = calculate_formula(cword, csentence, csyllable)
+            average_sum += score
             out.write("Score: " + str(score) + "\n\n\n")
+            if x == 10:
+                out.write("Score average: " + str(average_sum/10))
+
 
 
 def calculate_formula(words, sentences, syllables):
