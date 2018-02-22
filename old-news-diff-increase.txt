@@ -1,0 +1,71 @@
+Old news difficulty increase 1
+Word count: 407
+Syllable count: 9926
+Sentence count: 15
+Score: -1883.9475937755938
+
+
+Old news difficulty increase 2
+Word count: 928
+Syllable count: 25736
+Sentence count: 40
+Score: -2162.9043793103447
+
+
+Old news difficulty increase 3
+Word count: 453
+Syllable count: 11059
+Sentence count: 24
+Score: -1877.6463038079469
+
+
+Old news difficulty increase 4
+Word count: 128
+Syllable count: 2339
+Sentence count: 8
+Score: -1355.3378125
+
+
+Old news difficulty increase 5
+Word count: 331
+Syllable count: 8725
+Sentence count: 18
+Score: -2041.8448279624035
+
+
+Old news difficulty increase 6
+Word count: 1034
+Syllable count: 25459
+Sentence count: 44
+Score: -1900.0265909090908
+
+
+Old news difficulty increase 7
+Word count: 525
+Syllable count: 12816
+Sentence count: 25
+Score: -1879.6868571428572
+
+
+Old news difficulty increase 8
+Word count: 1927
+Syllable count: 49244
+Sentence count: 82
+Score: -1978.9492073170727
+
+
+Old news difficulty increase 9
+Word count: 412
+Syllable count: 10021
+Sentence count: 15
+Score: -1878.7538608414236
+
+
+Old news difficulty increase 10
+Word count: 564
+Syllable count: 13172
+Sentence count: 31
+Score: -1787.431451612903
+
+
+Score average: -1874.6528885179637

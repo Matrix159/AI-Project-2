@@ -10,6 +10,7 @@ def main():
     calculate_category("Old news", "./old-news/", "old-news.txt")
     increase_difficulty("Online news difficulty increase", "./online-news/", "online-news-info-diff-increase.txt")
     increase_difficulty("Trump tweets difficulty increase", "./tweets/", "trump-tweets-diff-increase.txt")
+    increase_difficulty("Old news difficulty increase", "./old-news/", "old-news-diff-increase.txt")
 
 
 def calculate_category(category_name, input_folder, output_file):
