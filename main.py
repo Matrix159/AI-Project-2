@@ -1,8 +1,6 @@
 from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import words as words
 from nltk.corpus import wordnet as wn
 import pyphen
-import re
 
 
 def main():
@@ -145,7 +143,6 @@ def increase_difficulty(category_name, input_folder, output_file):
                                 new_word_count += new_word_hyph.count('-')+1
                             if new_word_count > previous_new_count:
                                 previous_new_count = new_word_count
-                                print(new_word)
                     new_syllable_count += previous_new_count
             out.write(category_name + " {}".format(str(x)) + '\n')
             cword = calculate_words(input_data)
