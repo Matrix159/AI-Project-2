@@ -1,0 +1,71 @@
+Online news difficulty increase 1
+Word count: 459
+Syllable count: 10885
+Sentence count: 20
+Score: -1822.714151960784
+
+
+Online news difficulty increase 2
+Word count: 223
+Syllable count: 5798
+Sentence count: 9
+Score: -2017.9144444444444
+
+
+Online news difficulty increase 3
+Word count: 459
+Syllable count: 14144
+Sentence count: 12
+Score: -2438.922083333333
+
+
+Online news difficulty increase 4
+Word count: 746
+Syllable count: 20024
+Sentence count: 24
+Score: -2095.532813896336
+
+
+Online news difficulty increase 5
+Word count: 354
+Syllable count: 10250
+Sentence count: 12
+Score: -2272.6837711864405
+
+
+Online news difficulty increase 6
+Word count: 150
+Syllable count: 3730
+Sentence count: 8
+Score: -1915.9162499999998
+
+
+Online news difficulty increase 7
+Word count: 307
+Syllable count: 7828
+Sentence count: 18
+Score: -1967.6386038726018
+
+
+Online news difficulty increase 8
+Word count: 93
+Syllable count: 2668
+Sentence count: 5
+Score: -2239.0633548387095
+
+
+Online news difficulty increase 9
+Word count: 567
+Syllable count: 14206
+Sentence count: 28
+Score: -1933.3441468253968
+
+
+Online news difficulty increase 10
+Word count: 506
+Syllable count: 11952
+Sentence count: 20
+Score: -1817.1433142292487
+
+
+Score average: -2052.0872934587296

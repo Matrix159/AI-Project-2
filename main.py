@@ -1,14 +1,17 @@
 from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import words as words
+from nltk.corpus import wordnet as wn
 import pyphen
+import re
 
 
 def main():
-    
+
     calculate_category("Online news", "./online-news/", "online-news-info.txt")
     calculate_category("Trump tweets", "./tweets/", "trumpt-tweets.txt")
-    
-    """calculate_category("chris_test", "./chris_test/", "chris_test.txt")"""
-    
+    increase_difficulty("Online news difficulty increase", "./online-news/", "online-news-info-diff-increase.txt")
+    increase_difficulty("Trump tweets difficulty increase", "./tweets/", "trump-tweets-diff-increase.txt")
+
 
 def calculate_category(category_name, input_folder, output_file):
     """
@@ -37,7 +40,6 @@ def calculate_category(category_name, input_folder, output_file):
             out.write("Score: " + str(score) + "\n\n\n")
             if x == 10:
                 out.write("Score average: " + str(average_sum/10))
-
 
 
 def calculate_formula(words, sentences, syllables):
@@ -87,16 +89,74 @@ def calculate_syllables(text):
     
     # count syllables 
     for word in word_tokenize(text):
-       if word.isalpha():
-        word = worker.inserted(word)
-        
-        wordmap[word] = word.count('-')
-        if word.count('-') == 0:
-            count += 1
-        else:
-            count += word.count('-')+1
+        if word.isalpha():
+           word = worker.inserted(word)
+           wordmap[word] = word.count('-')
+           if word.count('-') == 0:
+               count += 1
+           else:
+               count += word.count('-')+1
 
     return wordmap, count
 
+
+def increase_difficulty(category_name, input_folder, output_file):
+    """
+    Increases the reading difficulty of the text by increasing syllables count
+    using synonyms.
+    :param category_name: The name of the category
+    :param input_folder: The folder name to read files from
+    :param output_file: The output file for the category
+    :return: None
+    """
+    open(output_file, 'w').close()
+    average_sum = 0
+    for x in range(1, 11):
+        with open(input_folder + "input{}.txt".format(str(x)), "r", encoding="utf8") as f:
+            input_data = f.read()
+        with open(output_file, 'a') as out:
+            old_syllable_count = 0
+            new_syllable_count = 0
+            # Go through and find synonyms for each word and take the one
+            # with the most syllables as our new syllable count for that word.
+            for word in word_tokenize(input_data):
+                if word.isalpha():
+                    worker = pyphen.Pyphen(lang='en')
+                    old_word = word
+                    old_word_hyph = worker.inserted(old_word)
+                    old_word_count = 0
+                    new_word_count = 0
+
+                    if old_word_hyph.count('-') == 0:
+                        old_word_count += 1
+                    else:
+                        old_word_count += old_word.count('-')+1
+                    old_syllable_count += old_word_count
+                    previous_new_count = old_word_count
+                    # if word in dictionary:
+                    for syn in wn.synsets(old_word):
+                        for l in syn.lemmas():
+                            new_word = l.name()
+                            # count syllables
+                            new_word_hyph = worker.inserted(new_word)
+                            if new_word_hyph.count('-') == 0:
+                                new_word_count += 1
+                            else:
+                                new_word_count += new_word_hyph.count('-')+1
+                            if new_word_count > previous_new_count:
+                                previous_new_count = new_word_count
+                                print(new_word)
+                    new_syllable_count += previous_new_count
+            out.write(category_name + " {}".format(str(x)) + '\n')
+            cword = calculate_words(input_data)
+            out.write("Word count: " + str(cword) + "\n")
+            out.write("Syllable count: " + str(new_syllable_count) + "\n")
+            csentence = calculate_sentences(input_data)
+            out.write("Sentence count: " + str(csentence) + "\n")
+            score = calculate_formula(cword, csentence, new_syllable_count)
+            average_sum += score
+            out.write("Score: " + str(score) + "\n\n\n")
+            if x == 10:
+                out.write("Score average: " + str(average_sum / 10))
 
 main()

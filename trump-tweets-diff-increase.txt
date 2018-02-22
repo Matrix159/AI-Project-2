@@ -1,0 +1,71 @@
+Trump tweets difficulty increase 1
+Word count: 41
+Syllable count: 1195
+Sentence count: 3
+Score: -2272.8171544715447
+
+
+Trump tweets difficulty increase 2
+Word count: 28
+Syllable count: 728
+Sentence count: 2
+Score: -2006.975
+
+
+Trump tweets difficulty increase 3
+Word count: 40
+Syllable count: 1379
+Sentence count: 5
+Score: -2717.87
+
+
+Trump tweets difficulty increase 4
+Word count: 55
+Syllable count: 1401
+Sentence count: 3
+Score: -1966.7660606060606
+
+
+Trump tweets difficulty increase 5
+Word count: 17
+Syllable count: 502
+Sentence count: 2
+Score: -2299.9807352941175
+
+
+Trump tweets difficulty increase 6
+Word count: 45
+Syllable count: 1280
+Sentence count: 3
+Score: -2214.7899999999995
+
+
+Trump tweets difficulty increase 7
+Word count: 30
+Syllable count: 1055
+Sentence count: 3
+Score: -2778.4149999999995
+
+
+Trump tweets difficulty increase 8
+Word count: 42
+Syllable count: 1223
+Sentence count: 3
+Score: -2270.8464285714285
+
+
+Trump tweets difficulty increase 9
+Word count: 46
+Syllable count: 945
+Sentence count: 2
+Score: -1554.4882608695652
+
+
+Trump tweets difficulty increase 10
+Word count: 52
+Syllable count: 1481
+Sentence count: 1
+Score: -2255.418076923077
+
+
+Score average: -2233.836671673579
