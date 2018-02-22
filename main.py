@@ -6,7 +6,7 @@ import pyphen
 def main():
 
     calculate_category("Online news", "./online-news/", "online-news-info.txt")
-    calculate_category("Trump tweets", "./tweets/", "trumpt-tweets.txt")
+    calculate_category("Trump tweets", "./tweets/", "trump-tweets.txt")
     increase_difficulty("Online news difficulty increase", "./online-news/", "online-news-info-diff-increase.txt")
     increase_difficulty("Trump tweets difficulty increase", "./tweets/", "trump-tweets-diff-increase.txt")
 
