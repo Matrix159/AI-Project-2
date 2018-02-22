@@ -1,0 +1,71 @@
+Old news 1
+Word count: 407
+Syllable count: 614
+Sentence count: 15
+Score: 51.66714823914826
+
+
+Old news 2
+Word count: 928
+Syllable count: 1409
+Sentence count: 40
+Score: 54.83721551724139
+
+
+Old news 3
+Word count: 453
+Syllable count: 641
+Sentence count: 24
+Score: 67.96694122516557
+
+
+Old news 4
+Word count: 128
+Syllable count: 169
+Sentence count: 8
+Score: 78.8965625
+
+
+Old news 5
+Word count: 331
+Syllable count: 562
+Sentence count: 18
+Score: 44.52919016448473
+
+
+Old news 6
+Word count: 1034
+Syllable count: 1626
+Sentence count: 44
+Score: 49.946136363636384
+
+
+Old news 7
+Word count: 525
+Syllable count: 885
+Sentence count: 25
+Score: 42.908571428571435
+
+
+Old news 8
+Word count: 1927
+Syllable count: 2994
+Sentence count: 82
+Score: 51.53859756097563
+
+
+Old news 9
+Word count: 412
+Syllable count: 621
+Sentence count: 15
+Score: 51.4403139158576
+
+
+Old news 10
+Word count: 564
+Syllable count: 809
+Sentence count: 31
+Score: 67.01854838709679
+
+
+Score average: 56.07492253021777
